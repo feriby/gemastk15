@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Trendingan - Diskusi dan PMB</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- style zindex -->
+    <style type="text/css">
+        .zindex {
+            z-index: 9999;
+        }
+    </style>
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid border-bottom bg-primary zindex text-center d-flex justify-content-center align-items-center "
+        style="height: 60px;">
+        <h2>Your is <span class="text-light">Admin1</span></h2>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- PPMB Admin Start -->
+    <div class="container py-5">
+        <div class="table-responsive py-5">
+            <h1>PPMB</h1>
+            <input class="form-control" id="myInput" type="text" placeholder="Search..">
+            <table class="table table-bordered table-striped text-center mt-3">
+                <thead class="table-dark">
+                    <tr>
+                        <th>NO</th>
+                        <th>WAKTU</th>
+                        <th>UNIVERSITAS</th>
+                        <th>JUMLAH JALUR</th>
+                        <th>VIEW</th>
+                        <th>ACTION</th>
+                    </tr>
+                </thead>
+                <thead class="table-dark">
+                    <tr>
+                        <th style="width: 0;">
+                            <select class="form-select" style="height: 30px;">
+                                <option>All</option>
+                                <option>10</option>
+                                <option>50</option>
+                                <option>100</option>
+                            </select>
+                        </th>
+                        <th style="width: 200px;">
+                            <input type="date">
+                        </th>
+                        <th style="width: 0;">
+                            <div class="d-flex" style="gap: 3px;">
+                                <input id="myInput" type="text" placeholder="Universitas.." style="width: 280px;">
+                                <button type="button" data-bs-toggle="modal" data-bs-target="#universitas"><i
+                                        class="fas fa-plus text-primary"></i></button>
+                            </div>
+                            <!-- The Modal -->
+                            <div class="modal" id="universitas">
+                                <div class="modal-dialog modal-fullscreen">
+                                    <div class="modal-content">
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">PMB BARU</h4>
+                                            <button type="button" class="fa fa-window-close fa-2x border-0"
+                                                data-bs-dismiss="modal"></button>
+                                        </div>
+                                        <!-- Modal body -->
+                                        <div class="modal-body">
+                                            <form class="text-dark text-center">
+                                                <div class="mb-3 mt-3">
+                                                    <label type="text" for="customFile">Logo Universitas</label>
+                                                    <div class="custom-file">
+                                                        <input type="file" class="custom-file-input" id="customFile"
+                                                            style="cursor: pointer;">
+                                                        <label class="custom-file-label text-left"
+                                                            for="customFile">Pilih File</label>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="namaUniversitas" class="form-label">Nama
+                                                        Universitas:</label>
+                                                    <input type="text" class="form-control text-capitalize"
+                                                        id="namaUniversitas" placeholder="Universitas">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="visi" class="form-label">Visi Universitas:</label>
+                                                    <textarea class="form-control" rows="5" id="visi"
+                                                        placeholder="Visi Universitas"></textarea>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="misi" class="form-label">Misi Universitas:</label>
+                                                    <textarea class="form-control" rows="5" id="misi"
+                                                        placeholder="Misi Universitas"></textarea>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="linkBukuPanduan" class="form-label">Link Buku
+                                                        Panduan:</label>
+                                                    <input type="text" class="form-control" id="linkBukuPanduan"
+                                                        placeholder="Link Buku Panduan (jika ada)">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="linkKontak" class="form-label">Link Kontak
+                                                        Universitas:</label>
+                                                    <input type="text" class="form-control" id="linkKontak"
+                                                        placeholder="Link Kontak Universitas">
+                                                </div>
+                                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                                    data-bs-target="#jalurUniversitas">Selanjutnya</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- The Modal -->
+                            <div class="modal" id="jalurUniversitas">
+                                <div class="modal-dialog modal-fullscreen">
+                                    <div class="modal-content">
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">JALUR BARU</h4>
+                                            <button type="button" class="fa fa-window-close fa-2x border-0"
+                                                data-bs-dismiss="modal"></button>
+                                        </div>
+                                        <!-- Modal body -->
+                                        <div class="modal-body">
+                                            <form class="text-dark text-center">
+                                                <div class="mt-3 mb-3">
+                                                    <label for="KategoriJalur">Kategori Jalur:</label>
+                                                    <select class="form-control" id="KategoriJalur">
+                                                        <option>Jalur Umum</option>
+                                                        <option>Jalur Khusus</option>
+                                                    </select>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="namaJalur" class="form-label">Nama
+                                                        Jalur:</label>
+                                                    <input type="text" class="form-control text-uppercase"
+                                                        id="namaJalur" placeholder="Jalur Universitas">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="mulaiPendaftaran" class="form-label">Mulai
+                                                        Pendaftaran:</label>
+                                                    <input type="date" class="form-control"
+                                                        id="mulaiPendaftaran"></input>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="akhirPendaftaran" class="form-label">Akhir
+                                                        Pendaftaran:</label>
+                                                    <input type="date" class="form-control"
+                                                        id="akhirPendaftaran"></input>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="linkPendaftaran" class="form-label">Link
+                                                        Pendaftaran:</label>
+                                                    <input type="text" class="form-control" id="linkPendaftaran"
+                                                        placeholder="Link Pendaftaran">
+                                                </div>
+                                                <button type="submit" class="btn btn-primary">Tambah Lagi</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </th>
+                        <th style="width: 150px;">
+                            <input type="number" placeholder="Jumlah Jalur...">
+                        </th>
+                        <th style="width: 0;">
+                            <select class="form-select" style="height: 30px;">
+                                <option>All</option>
+                                <option>> 10</option>
+                                <option>> 50</option>
+                                <option>> 100</option>
+                            </select>
+                        </th>
+                        <th>
+                            <div class="d-flex justify-content-center" style="gap: 2px;">
+                                <button><i class="fa fa-plus"></i></button>
+                                <button><i class="fas fa-edit"></i></button>
+                                <button><i class="fa fa-minus"></i></button>
+                                <button><i class="fa fa-eye"></i></button>
+                            </div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>10:10 | 19 Oktober 2021</td>
+                        <td>Universitas Islam Sultan Agung</td>
+                        <td>14 Jalur Pendaftaran</td>
+                        <td>20</td>
+                        <td class="d-flex justify-content-center" style="gap: 5px;">
+                            <button type="button" class="btn-primary"><i class="fa fa-plus"></i></button>
+                            <button type="button" class="btn-primary"><i class="fas fa-edit"></i></button>
+                            <button type="button" class="btn-primary"><i class="fa fa-minus"></i></button>
+                            <button type="button" class="btn-primary"><i class="fa fa-eye"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>10:10 | 19 Oktober 2021</td>
+                        <td>Universitas Islam Sultan Agung</td>
+                        <td>14 Jalur Pendaftaran</td>
+                        <td>20</td>
+                        <td class="d-flex justify-content-center" style="gap: 5px;">
+                            <button type="button" class="btn-primary"><i class="fa fa-plus"></i></button>
+                            <button type="button" class="btn-primary"><i class="fas fa-edit"></i></button>
+                            <button type="button" class="btn-primary"><i class="fa fa-minus"></i></button>
+                            <button type="button" class="btn-primary"><i class="fa fa-eye"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>10:10 | 19 Oktober 2021</td>
+                        <td>Universitas Islam Sultan Agung</td>
+                        <td>14 Jalur Pendaftaran</td>
+                        <td>20</td>
+                        <td class="d-flex justify-content-center" style="gap: 5px;">
+                            <button type="button" class="btn-primary"><i class="fa fa-plus"></i></button>
+                            <button type="button" class="btn-primary"><i class="fas fa-edit"></i></button>
+                            <button type="button" class="btn-primary"><i class="fa fa-minus"></i></button>
+                            <button type="button" class="btn-primary"><i class="fa fa-eye"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>10:10 | 19 Oktober 2021</td>
+                        <td>Universitas Islam Sultan Agung</td>
+                        <td>14 Jalur Pendaftaran</td>
+                        <td>20</td>
+                        <td class="d-flex justify-content-center" style="gap: 5px;">
+                            <button type="button" class="btn-primary"><i class="fa fa-plus"></i></button>
+                            <button type="button" class="btn-primary"><i class="fas fa-edit"></i></button>
+                            <button type="button" class="btn-primary"><i class="fa fa-minus"></i></button>
+                            <button type="button" class="btn-primary"><i class="fa fa-eye"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>10:10 | 19 Oktober 2021</td>
+                        <td>Universitas Islam Sultan Agung</td>
+                        <td>14 Jalur Pendaftaran</td>
+                        <td>20</td>
+                        <td class="d-flex justify-content-center" style="gap: 5px;">
+                            <button type="button" class="btn-primary"><i class="fa fa-plus"></i></button>
+                            <button type="button" class="btn-primary"><i class="fas fa-edit"></i></button>
+                            <button type="button" class="btn-primary"><i class="fa fa-minus"></i></button>
+                            <button type="button" class="btn-primary"><i class="fa fa-eye"></i></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- PPMB Admin End -->
+
+
+    <!-- DISKUSI Admin Start -->
+    <div class="container mb-5">
+        <div class="table-responsive">
+            <h1>TOPIK</h1>
+            <input class="form-control" id="myInput" type="text" placeholder="Search..">
+            <table class="table table-bordered table-striped text-center mt-3">
+                <thead class="table-dark">
+                    <tr>
+                        <th>NO</th>
+                        <th>WAKTU</th>
+                        <th>JUDUL</th>
+                        <th>LIKE</th>
+                        <th>COMMENT</th>
+                        <th>VIEW</th>
+                        <th>ACTION</th>
+                    </tr>
+                </thead>
+                <thead class="table-dark">
+                    <tr>
+                        <th style="width: 0;">
+                            <select class="form-select" style="height: 30px;">
+                                <option>All</option>
+                                <option>10</option>
+                                <option>50</option>
+                                <option>100</option>
+                            </select>
+                        </th>
+                        <th style="width: 200px;">
+                            <input type="date">
+                        </th>
+                        <th style="width: 0;">
+                            <div class="d-flex" style="gap: 3px;">
+                                <input id="myInput" type="text" placeholder="Judul.." style="width: 280px;">
+                                <button type="button" data-bs-toggle="modal" data-bs-target="#topik"><i
+                                        class="fas fa-plus text-primary"></i></button>
+                            </div>
+                            <!-- The Modal -->
+                            <div class="modal" id="topik">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">TOPIK BARU</h4>
+                                            <button type="button" class="fa fa-window-close fa-2x border-0"
+                                                data-bs-dismiss="modal"></button>
+                                        </div>
+                                        <!-- Modal body -->
+                                        <div class="modal-body">
+                                            <form class="text-dark text-center">
+                                                <div class="mb-3 mt-3">
+                                                    <label type="text" for="customFile">Foto Topik</label>
+                                                    <div class="custom-file">
+                                                        <input type="file" class="custom-file-input" id="customFile"
+                                                            style="cursor: pointer;">
+                                                        <label class="custom-file-label text-left"
+                                                            for="customFile">Pilih File</label>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="judul" class="form-label">Judul:</label>
+                                                    <input type="text" class="form-control" id="judul"
+                                                        placeholder="Judul Topik">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="deskripsiTopik" class="form-label">Deskripsi Topik:</label>
+                                                    <textarea class="form-control" rows="5" id="deskripsiTopik"
+                                                        placeholder="Deskripsi Topik"></textarea>
+                                                </div>
+                                                <button type="submit" class="btn btn-primary">TAMBAH</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </th>
+                        <th style="width: 0;">
+                            <select class="form-select" style="height: 30px;">
+                                <option>All</option>
+                                <option>> 10</option>
+                                <option>> 50</option>
+                                <option>> 100</option>
+                            </select>
+                        </th>
+                        <th style="width: 0;">
+                            <select class="form-select" style="height: 30px;">
+                                <option>All</option>
+                                <option>> 10</option>
+                                <option>> 50</option>
+                                <option>> 100</option>
+                            </select>
+                        </th>
+                        <th style="width: 0;">
+                            <select class="form-select" style="height: 30px;">
+                                <option>All</option>
+                                <option>> 10</option>
+                                <option>> 50</option>
+                                <option>> 100</option>
+                            </select>
+                        </th>
+                        <th>
+                            <div class="d-flex justify-content-center" style="gap: 2px;">
+                                <button><i class="fa fa-plus"></i></button>
+                                <button><i class="fas fa-edit"></i></button>
+                                <button><i class="fa fa-minus"></i></button>
+                                <button><i class="fa fa-eye"></i></button>
+                            </div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>10:10 | 19 Oktober 2021</td>
+                        <td>BBM Naik Tajam Sekali</td>
+                        <td>30</td>
+                        <td>20</td>
+                        <td>100</td>
+                        <td class="d-flex justify-content-center" style="gap: 5px;">
+                            <button type="button" class="btn-primary"><i class="fa fa-plus"></i></button>
+                            <button type="button" class="btn-primary"><i class="fas fa-edit"></i></button>
+                            <button type="button" class="btn-primary"><i class="fa fa-minus"></i></button>
+                            <button type="button" class="btn-primary"><i class="fa fa-eye"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>10:10 | 19 Oktober 2021</td>
+                        <td>BBM Naik Tajam Sekali</td>
+                        <td>30</td>
+                        <td>20</td>
+                        <td>100</td>
+                        <td class="d-flex justify-content-center" style="gap: 5px;">
+                            <button type="button" class="btn-primary"><i class="fa fa-plus"></i></button>
+                            <button type="button" class="btn-primary"><i class="fas fa-edit"></i></button>
+                            <button type="button" class="btn-primary"><i class="fa fa-minus"></i></button>
+                            <button type="button" class="btn-primary"><i class="fa fa-eye"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>10:10 | 19 Oktober 2021</td>
+                        <td>BBM Naik Tajam Sekali</td>
+                        <td>30</td>
+                        <td>20</td>
+                        <td>100</td>
+                        <td class="d-flex justify-content-center" style="gap: 5px;">
+                            <button type="button" class="btn-primary"><i class="fa fa-plus"></i></button>
+                            <button type="button" class="btn-primary"><i class="fas fa-edit"></i></button>
+                            <button type="button" class="btn-primary"><i class="fa fa-minus"></i></button>
+                            <button type="button" class="btn-primary"><i class="fa fa-eye"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>10:10 | 19 Oktober 2021</td>
+                        <td>BBM Naik Tajam Sekali</td>
+                        <td>30</td>
+                        <td>20</td>
+                        <td>100</td>
+                        <td class="d-flex justify-content-center" style="gap: 5px;">
+                            <button type="button" class="btn-primary"><i class="fa fa-plus"></i></button>
+                            <button type="button" class="btn-primary"><i class="fas fa-edit"></i></button>
+                            <button type="button" class="btn-primary"><i class="fa fa-minus"></i></button>
+                            <button type="button" class="btn-primary"><i class="fa fa-eye"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>10:10 | 19 Oktober 2021</td>
+                        <td>BBM Naik Tajam Sekali</td>
+                        <td>30</td>
+                        <td>20</td>
+                        <td>100</td>
+                        <td class="d-flex justify-content-center" style="gap: 5px;">
+                            <button type="button" class="btn-primary"><i class="fa fa-plus"></i></button>
+                            <button type="button" class="btn-primary"><i class="fas fa-edit"></i></button>
+                            <button type="button" class="btn-primary"><i class="fa fa-minus"></i></button>
+                            <button type="button" class="btn-primary"><i class="fa fa-eye"></i></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- DISKUSI Admin End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <!-- filter and search -->
+    <script>
+        $(document).ready(function () {
+            $("#myInput").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                $(".dropdown-menu li").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+    </script>
+
+    <!-- choose file -->
+    <script>
+        // Add the following code if you want the name of the file appear on select
+        $(".custom-file-input").on("change", function () {
+            var fileName = $(this).val().split("\\").pop();
+            $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+        });
+    </script>
+
+</body>
+
+</html>

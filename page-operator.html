@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Trendingan - Diskusi dan PMB</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- style zindex -->
+    <style type="text/css">
+        .zindex {
+            z-index: 9999;
+        }
+
+        li {
+            cursor: pointer;
+        }
+    </style>
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <div class="container-fluid border-bottom position-fixed bg-primary zindex text-center d-flex justify-content-center align-items-center "
+        style="height: 60px;">
+        <h2>Your is <span class="text-light">OPERATOR</span></h2>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Admin Start -->
+    <!-- <div class="container-fluid py-5 d-flex justify-content-center align-items-center">
+        <div class="container row text-center d-flex justify-content-center align-items-center py-5"
+            style=" gap: 50px;">
+            <div class="">
+                <img src="img/user.jpg" alt="user" class="rounded-circle mb-3" style="width: 200px;">
+                <a href="#" class="nav-item nav-link active h3">Admin1</a>
+            </div>
+            <div class="">
+                <img src="img/user.jpg" alt="user" class="rounded-circle mb-3" style="width: 200px;">
+                <a href="#" class="nav-item nav-link active h3">Admin1</a>
+            </div>
+            <div class="">
+                <img src="img/user.jpg" alt="user" class="rounded-circle mb-3" style="width: 200px;">
+                <a href="#" class="nav-item nav-link active h3">Admin1</a>
+            </div>
+        </div>
+    </div> -->
+    <!-- Admin End -->
+
+    <!-- Deskription Admin Start -->
+    <div class="container py-5">
+        <div class="table-responsive py-5">
+            <input class="form-control" id="myInput" type="text" placeholder="Search..">
+            <table class="table table-bordered table-striped text-center mt-3">
+                <thead class="table-dark">
+                    <tr>
+                        <th>NO</th>
+                        <th>WAKTU</th>
+                        <th>ADMIN</th>
+                        <th>KETERANGAN</th>
+                    </tr>
+                </thead>
+                <thead class="table-dark">
+                    <tr>
+                        <th style="width: 0;">
+                            <select class="form-select" style="height: 30px;">
+                                <option>All</option>
+                                <option>10</option>
+                                <option>50</option>
+                                <option>100</option>
+                            </select>
+                        </th>
+                        <th style="width: 200px;">
+                            <input type="date">
+                        </th>
+                        <th style="width: 0;">
+                            <div class="d-flex" style="gap: 3px;">
+                                <select class="form-select" style="width: 95px; height: 30px;">
+                                    <option>All</option>
+                                    <option>Admin1</option>
+                                    <option>Admin2</option>
+                                    <option>Admin3</option>
+                                </select>
+                                <button type="button" data-bs-toggle="modal" data-bs-target="#myModal"><i
+                                        class="fas fa-plus text-primary"></i></button>
+                            </div>
+                            <!-- The Modal -->
+                            <div class="modal" id="myModal">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">ADMIN BARU</h4>
+                                            <button type="button" class="fa fa-window-close fa-2x border-0"
+                                                data-bs-dismiss="modal"></button>
+                                        </div>
+                                        <!-- Modal body -->
+                                        <div class="modal-body">
+                                            <form class="text-dark text-center">
+                                                <div class="mb-3 mt-3">
+                                                    <label for="email" class="form-label">Username:</label>
+                                                    <input type="email" class="form-control" id="email"
+                                                        placeholder="Username" name="email">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="pwd" class="form-label">Password:</label>
+                                                    <input type="password" class="form-control" id="pwd"
+                                                        placeholder="Password" name="pswd">
+                                                </div>
+                                                <button type="submit" class="btn btn-primary">TAMBAH</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </th>
+                        <th style="width: 500px;">
+                            <select class="form-select" style="width: 95px; height: 30px;">
+                                <option>All</option>
+                                <option>PPMB</option>
+                                <option>DISKUSI</option>
+                            </select>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>10:10 | 19 Oktober 2021</td>
+                        <td>Admin1</td>
+                        <td>PPMB : Menambahakan Universitas Islam Sultam Agung</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>10:10 | 20 Oktober 2021</td>
+                        <td>Admin</td>
+                        <td>Keterangan</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>10:10 | 21 Oktober 2021</td>
+                        <td>Admin</td>
+                        <td>Keterangan</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>10:10 | 22 Oktober 2021</td>
+                        <td>Admin</td>
+                        <td>Keterangan</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>10:10 | 23 Oktober 2021</td>
+                        <td>Admin</td>
+                        <td>Keterangan</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- Deskription Admin End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <!-- filter and search -->
+    <script>
+        $(document).ready(function () {
+            $("#myInput").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                $(".dropdown-menu li").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>

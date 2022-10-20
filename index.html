@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Trendingan - Diskusi dan PPMB</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- style zindex -->
+    <style type="text/css">
+        .zindex {
+            z-index: 9999;
+        }
+
+        .cursor-pointer {
+            cursor: pointer;
+        }
+    </style>
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <div class="container-fluid position-fixed bg-light zindex"
+        style="box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;">
+        <div class="row px-xl-5">
+            <div class="col-lg-3 d-none d-lg-block">
+                <div class="h-100 d-flex justify-content-left align-items-center">
+                    <h5 class="text-primary m-0"><i class="fa fa-book-open mr-2"></i>Trendingan.</h5>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0">
+                    <a href="" class="text-decoration-none d-block d-lg-none">
+                        <h1 class="m-0"><span class="text-primary">T</span>rendingan.</h1>
+                    </a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav py-0 col-lg-12 d-flex" style="justify-content: right;">
+                            <a href="index.html" class="nav-item nav-link active">Beranda</a>
+                            <a href="diskusi.html" class="nav-item nav-link">Diskusi</a>
+                            <a href="ppmb.html" class="nav-item nav-link">PPMB</a>
+                            <a href="tentang.html" class="nav-item nav-link">Tentang</a>
+                            <a href="kontak.html" class="nav-item nav-link mr-5">Kontak</a>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <a class="btn btn-primary w-100" style="height: 40px;"
+                                    href="page-register.html">Gabung</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="py-5"></div>
+    <div class="container p-0 pb-5 py-5 mb-3">
+        <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#header-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#header-carousel" data-slide-to="1"></li>
+                <li data-target="#header-carousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" style="border-radius: 25px;">
+                <div class="carousel-item active" style="min-height: 300px;">
+                    <img class="position-relative w-100" src="img/carousel-1.jpg"
+                        style="min-height: 300px; object-fit: cover;">
+                    <div class="carousel-caption d-flex align-items-center justify-content-center">
+                        <div class="p-5" style="width: 100%; max-width: 900px;">
+                            <h5 class="text-white text-uppercase mb-md-3">Telusuri Keinginan Anda</h5>
+                            <h1 class="display-3 text-white mb-md-4">Gudangnya Informasi Terbaik di Indonesia</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" style="min-height: 300px;">
+                    <img class="position-relative w-100" src="img/carousel-2.jpg"
+                        style="min-height: 300px; object-fit: cover;">
+                    <div class="carousel-caption d-flex align-items-center justify-content-center">
+                        <div class="p-5" style="width: 100%; max-width: 900px;">
+                            <h5 class="text-white text-uppercase mb-md-3">Pusatkan Pikiran Anda</h5>
+                            <h1 class="display-3 text-white mb-md-4">Diskusi Asik Menanti Anda</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" style="min-height: 300px;">
+                    <img class="position-relative w-100" src="img/carousel-3.jpg"
+                        style="min-height: 300px; object-fit: cover;">
+                    <div class="carousel-caption d-flex align-items-center justify-content-center">
+                        <div class="p-5" style="width: 100%; max-width: 900px;">
+                            <h5 class="text-white text-uppercase mb-md-3">Lihat Seksama Untuk Hal yang Luar Biasa</h5>
+                            <h1 class="display-3 text-white mb-md-4">Masa Depan di Tangan Anda, Gunakan dengan Penuh
+                                Hasrat</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- PPMB Trending Start -->
+    <div class="container-fluid">
+        <div class="container pb-3 d-flex flex-column justify-content-center align-items-center">
+            <div class="text-center mb-5">
+                <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Pusat</h5>
+                <h1>Penerimaan Mahasiswa Baru Indonesia</h1>
+            </div>
+            <div class="row text-center d-flex justify-content-center" style="gap: 30px;">
+                <div class="col-lg-3 col-md-6 mb-4 rounded cursor-pointer"
+                    style="box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;">
+                    <img class="mt-3" src="img/cat-1.png" alt="">
+                    <div class="mt-3">
+                        <span>14 Jalur Pendaftaran</span>
+                        <h5 class="font-weight-medium mt-2 mb-5 cursor-pointer"><a href="page-ppmb-unissula.html" class="text-dark">Universitas Islam Sultan Agung Semarang</a></h5>    
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 rounded"
+                    style="box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;">
+                    <img class="mt-3" src="img/unnes.jpg" alt="">
+                    <div class="mt-3">
+                        <span>4 Jalur Pendaftaran</span>
+                        <h5 class="font-weight-medium mt-2 mb-5 cursor-pointer"><a href="#" class="text-dark">Universitas Negeri Semarang</a></h5>    
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4  rounded"
+                    style="box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;">
+                    <img class="mt-3" src="img/usm.png" alt="">
+                    <div class="mt-3">
+                        <span>2 Jalur Pendaftaran</span>
+                        <h5 class="font-weight-medium mt-2 mb-5 cursor-pointer"><a href="#" class="text-dark">Universitas Semarang</a></h5>    
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4  rounded"
+                    style="box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;">
+                    <img class="mt-3" src="img/udinus.png" alt="">
+                    <div class="mt-3">
+                        <span>2 Jalur Pendaftaran</span>
+                        <h5 class="font-weight-medium mt-2 mb-5 cursor-pointer"><a href="#" class="text-dark">Universitas Dian Nuswantoro</a></h5>    
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4  rounded"
+                    style="box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;">
+                    <img class="mt-3" src="img/unwahas.png" alt="">
+                    <div class="mt-3">
+                        <span>3 Jalur Pendaftaran</span>
+                        <h5 class="font-weight-medium mt-2 mb-5 cursor-pointer"><a href="page-ppmb-unwahas.html" class="text-dark">Universitas Wahid Hasyim</a></h5>    
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4  rounded"
+                    style="box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;">
+                    <img class="mt-3" src="img/unimus.png" alt="">
+                    <div class="mt-3">
+                        <span>10 Jalur Pendaftaran</span>
+                        <h5 class="font-weight-medium mt-2 mb-5 cursor-pointer"><a href="#" class="text-dark">Universitas Muhammadiyah Semarang</a></h5>    
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 cursor-pointer rounded"
+                    style="box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;">
+                    <img class="mt-3" src="img/polines.png" alt="">
+                    <div class="mt-3">
+                        <span>3 Jalur Pendaftaran</span>
+                        <a class="font-weight-medium mt-2 mb-5 h5" href=""></a>
+                        <h5 class="font-weight-medium mt-2 mb-5 cursor-pointer"><a href="page-ppmb-polines.html" class="text-dark">Politeknik Negeri Semarang</a></h5>        
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4  rounded"
+                    style="box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;">
+                    <img class="mt-3" src="img/polimarin.png" alt="">
+                    <div class="mt-3">
+                        <span>2 Jalur Pendaftaran</span>
+                        <h5 class="font-weight-medium mt-2 mb-5 cursor-pointer"><a href="#" class="text-dark">Politik Maritim Negeri Semarang</a></h5>    
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4  rounded"
+                    style="box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;">
+                    <img class="mt-3" src="img/stekom.png" alt="">
+                    <div class="mt-3">
+                        <span>3 Jalur Pendaftaran</span>
+                        <h5 class="font-weight-medium mt-2 mb-5 cursor-pointer"><a href="#" class="text-dark">Universitas STEKOM (Sains dan Teknologi Komputer)</a></h5>    
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4  rounded"
+                    style="box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;">
+                    <img class="mt-3" src="img/unika.png" alt="">
+                    <div class="mt-3">
+                        <span>4 Jalur Pendaftaran</span>
+                        <h5 class="font-weight-medium mt-2 mb-5 cursor-pointer"><a href="#" class="text-dark">Universitas Katolik Soegijapranata</a></h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4  rounded"
+                    style="box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;">
+                    <img class="mt-3" src="img/unisbank.png" alt="">
+                    <div class="mt-3">
+                        <span>3 Jalur Pendaftaran</span>
+                        <h5 class="font-weight-medium mt-2 mb-5 cursor-pointer"><a href="#" class="text-dark">Universitas STIKUBANK</a></h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 rounded"
+                    style="box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;">
+                    <img class="mt-3" src="img/untag.png" alt="">
+                    <div class="mt-3">
+                        <span>2 Jalur Pendaftaran</span>
+                        <h5 class="font-weight-medium mt-2 mb-5 cursor-pointer"><a href="#" class="text-dark">Universitas 17 Agustus 1945 Semarang</a></h5>
+                    </div>
+                </div>
+            </div>
+            <a href="ppmb.html" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-5">Telusuri Selengkapnya</a>
+        </div>
+    </div>
+    <!-- PPMB Trending Start -->
+
+
+    <!-- Diskusi Trending Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5 d-flex flex-column justify-content-center align-items-center">
+            <div class="text-center mb-5">
+                <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Diskusi</h5>
+                <h1>Topic Hangat</h1>
+            </div>
+            <div class="row d-flex justify-content-center align-items-center" style="gap: 30px;">
+                <div class="col-lg-4 mb-3 p-3 rounded" style="box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px; height: 430px;">
+                    <div class="rounded overflow-hidden mb-2">
+                        <img class="img-fluid rounded" src="img/sabunbatang.jpg" alt="">
+                        <div class="mt-3">
+                            <a class="h5" href="page-diskusi.html">Minyak Kelapa Menjadi Sabun Mandi</a>
+                            <div class="d-flex justify-content-left mt-4 cursor-pointer border-bottom pb-3" style="gap: 20px; ">
+                                <small class="m-0"><i class="fas fas fa-thumbs-up text-primary mr-2"></i>220 suka</small>
+                                <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>0 komentar</small>
+                                <small class="m-0"><i class="fa fa-eye text-primary mr-2"></i>300 orang</small>
+                            </div>
+                            <small class="mt-2 d-block"><i class="far fa-clock text-primary mr-2"></i>4 jam yang
+                                    lalu</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-3 p-3 rounded" style="box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px; height: 430px;">
+                    <div class="rounded overflow-hidden mb-2">
+                        <img class="img-fluid rounded" src="img/LautMati.jpeg" alt="">
+                        <div class="mt-3">
+                            <a class="h5" href="page-diskusi-lautMati.html">Jadi Juragan Garam Karena Laut Mati</a>
+                            <div class="d-flex justify-content-left mt-4 cursor-pointer border-bottom pb-3" style="gap: 20px; ">
+                                <small class="m-0"><i class="fas fas fa-thumbs-up text-primary mr-2"></i>180 suka</small>
+                                <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>2 komentar</small>
+                                <small class="m-0"><i class="fa fa-eye text-primary mr-2"></i>400 orang</small>
+                            </div>
+                            <small class="mt-2 d-block"><i class="far fa-clock text-primary mr-2"></i>3 jam yang
+                                    lalu</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-3 p-3 rounded" style="box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px; height: 430px;">
+                    <div class="rounded overflow-hidden mb-2">
+                        <img class="img-fluid rounded" src="img/GurunSahara.jpg" alt="">
+                        <div class="mt-3">
+                            <a class="h5" href="page-diskusi.html">Gurun Sahara Jadi Hutan</a>
+                            <div class="d-flex justify-content-left mt-4 cursor-pointer border-bottom pb-3" style="gap: 20px; ">
+                                <small class="m-0"><i class="fas fas fa-thumbs-up text-primary mr-2"></i>150 suka</small>
+                                <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>1 komentar</small>
+                                <small class="m-0"><i class="fa fa-eye text-primary mr-2"></i>120 orang</small>
+                            </div>
+                            <small class="mt-2 d-block"><i class="far fa-clock text-primary mr-2"></i>5 jam yang
+                                    lalu</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-3 p-3 rounded" style="box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px; height: 430px;">
+                    <div class="rounded overflow-hidden mb-2">
+                        <img class="img-fluid rounded" src="img/HujanMematikan.jpg" alt="">
+                        <div class="mt-3">
+                            <a class="h5" href="page-diskusi-hujan.html">Hujan Sehat Tapi Mematikan</a>
+                            <div class="d-flex justify-content-left mt-4 cursor-pointer border-bottom pb-3" style="gap: 20px; ">
+                                <small class="m-0"><i class="fas fas fa-thumbs-up text-primary mr-2"></i>120 suka</small>
+                                <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>2 komentar</small>
+                                <small class="m-0"><i class="fa fa-eye text-primary mr-2"></i>110 orang</small>
+                            </div>
+                            <small class="mt-2 d-block"><i class="far fa-clock text-primary mr-2"></i>1 jam lalu yang
+                                    lalu</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-3 p-3 rounded" style="box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px; height: 430px;">
+                    <div class="rounded overflow-hidden mb-2">
+                        <img class="img-fluid rounded" src="img/Berlian.jpg" alt="">
+                        <div class="mt-3">
+                            <a class="h5" href="page-diskusi.html">Gergaji Pakai Berlian</a>
+                            <div class="d-flex justify-content-left mt-4 cursor-pointer border-bottom pb-3" style="gap: 20px; ">
+                                <small class="m-0"><i class="fas fas fa-thumbs-up text-primary mr-2"></i>154 suka</small>
+                                <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>1 komentar</small>
+                                <small class="m-0"><i class="fa fa-eye text-primary mr-2"></i>132 orang</small>
+                            </div>
+                            <small class="mt-2 d-block"><i class="far fa-clock text-primary mr-2"></i>48 menit yang
+                                    lalu</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-3 p-3 rounded" style="box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px; height: 430px;">
+                    <div class="rounded overflow-hidden mb-2">
+                        <img class="img-fluid rounded" src="img/ApiPelangi.jpg" alt="">
+                        <div class="mt-3">
+                            <a class="h5" href="page-diskusi.html">Api Pelangi</a>
+                            <div class="d-flex justify-content-left mt-4 cursor-pointer border-bottom pb-3" style="gap: 20px; ">
+                                <small class="m-0"><i class="fas fas fa-thumbs-up text-primary mr-2"></i>124 suka</small>
+                                <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>1 komentar</small>
+                                <small class="m-0"><i class="fa fa-eye text-primary mr-2"></i>80 orang</small>
+                            </div>
+                            <small class="mt-2 d-block"><i class="far fa-clock text-primary mr-2"></i>1 jam yang
+                                    lalu</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="diskusi.html" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-5">Telusuri Selengkapnya</a>
+        </div>
+    </div>
+    <!-- Diskusi Trending End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid">
+        <div class="container mb-5">
+            <div class="text-center mb-5">
+                <h5 class="text-uppercase mb-3" style="letter-spacing: 5px; color: #747474;">Testimonial</h5>
+                <h1>Tanggapan Dari Pembaca</h1>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="owl-carousel testimonial-carousel">
+                        <div class="text-center">
+                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
+                            <h4 class="font-weight-normal mb-4">Website ini sangat membantu sekali baik dalam fitur
+                                diskusi ataupun fitur PMB-nya, saya bisa membuka pikiran saya untuk digunakan berdiskusi
+                                dan saya bisa tau deadline pendaftaran kuliah lebih lengkap</h4>
+                            <img class="img-fluid mx-auto mb-3" src="img/testimonial-1.jpg" alt="">
+                            <h5 class="m-0">Andrianto</h5>
+                        </div>
+                        <div class="text-center">
+                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
+                            <h4 class="font-weight-normal mb-4">Fitur PPMB sangat membantu sekali, karena dengan tampilan yang simple memudahkan saya mencari informasi terkait PMB di Universitas tertentu</h4>
+                            <img class="img-fluid mx-auto mb-3" src="img/testimonial-2.jpg" alt="">
+                            <h5 class="m-0">Sulistio</h5>
+                        </div>
+                        <div class="text-center">
+                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
+                            <h4 class="font-weight-normal mb-4">tampilannya sangat simple tapi elegan apalagi fitur diskusi, topiknya beragam dan sangat amat - amat menarik untuk disimak</h4>
+                            <img class="img-fluid mx-auto mb-3" src="img/testimonial-3.jpg" alt="">
+                            <h5 class="m-0">Kusniadi</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- Footer Start -->
+    <!-- <div class="container-fluid bg-dark text-white py-5 px-sm-3 px-lg-5">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row ">
+                    <div class="col-md-6 mb-5">
+                        <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Informasi Kami</h5>
+                        <p><i class="fa fa-map-marker-alt mr-2"></i>Semarang, Jawa Tengah, Indonesia</p>
+                        <p><i class="fa fa-phone-alt mr-2"></i>+6289123445435</p>
+                        <p><i class="fa fa-envelope mr-2"></i>trendingan@gmail.com</p>
+                        <div class="d-flex justify-content-start mt-4">
+                            <a class="btn btn-outline-light btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-square mr-2" href="#"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-square mr-2" href="#"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-outline-light btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 mb-5">
+                        <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Saran untuk Website
+                        </h5>
+
+                        <p>Berikan saran dan kritik anda agar dapat meningkatkan kualitas dan performa website kami</p>
+                        <div class="w-100">
+                            <div class="input-group">
+                                <input type="text" class="form-control border-light" style="padding: 30px;"
+                                    placeholder="Saran">
+                                <div class="input-group-append">
+                                    <button class="btn btn-primary px-4">Kirim</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5 d-flex justify-content-center align-items-center"
+        style="border-color: rgba(256, 256, 256, .1) !important;">
+        <div class="col-lg-9 text-md-left mb-3 mb-md-0">
+            <p class="m-0 text-white text-center ">&copy; <a href="#">Trendingan</a>. All Rights Reserved. 2022</p>
+        </div>
+    </div> -->
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

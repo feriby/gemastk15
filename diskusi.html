@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Trendingan - Diskusi dan PPMB</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- style zindex -->
+    <style type="text/css">
+        .zindex {
+            z-index: 9999;
+        }
+
+        @media (max-width: 500px) {
+            .box-column {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    </style>
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <div class="container-fluid position-fixed bg-light zindex"
+        style="box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;">
+        <div class="row px-xl-5">
+            <div class="col-lg-3 d-none d-lg-block">
+                <div class="h-100 d-flex justify-content-left align-items-center">
+                    <h5 class="text-primary m-0"><i class="fa fa-book-open mr-2"></i>Trendingan.</h5>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0">
+                    <a href="" class="text-decoration-none d-block d-lg-none">
+                        <h1 class="m-0"><span class="text-primary">T</span>rendingan.</h1>
+                    </a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav py-0 col-lg-12 d-flex" style="justify-content: right;">
+                            <a href="index.html" class="nav-item nav-link">Beranda</a>
+                            <a href="diskusi.html" class="nav-item nav-link active">Diskusi</a>
+                            <a href="ppmb.html" class="nav-item nav-link">PPMB</a>
+                            <a href="tentang.html" class="nav-item nav-link">Tentang</a>
+                            <a href="kontak.html" class="nav-item nav-link mr-5">Kontak</a>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <a class="btn btn-primary w-100" style="height: 40px;"
+                                    href="page-register.html">Gabung</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Discution Start -->
+    <div class="py-4"></div>
+    <div class="container-fluid pt-5">
+        <div class="container">
+
+            <!-- Search Form -->
+            <div class="mb-5">
+                <form action="">
+                    <div class="input-group">
+                        <input type="text" class="form-control form-control-lg" placeholder="Cari Topik">
+                        <div class="input-group-append">
+                            <span class="input-group-text bg-transparent text-primary">
+                                <i class="fa fa-search"></i>
+                            </span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Recent and Tags Post -->
+            <div class="d-flex justify-content-between box-column text-center">
+                <!-- Recent Post -->
+                <div class="col-lg-6 text-left">
+                    <h3 class="text-uppercase mb-4" style="letter-spacing: 5px;">Topic Terbaru</h3>
+                    <a class="d-flex align-items-center text-decoration-none mb-3" href="">
+                        <img class="img-fluid rounded" src="img/Berlian80.jpg" alt="">
+                        <div class="pl-3">
+                            <h6 class="">Gergaji Pakai Berlian</h6>
+                            <small>48 menit yang lalu</small>
+                        </div>
+                    </a>
+                    <a class="d-flex align-items-center text-decoration-none mb-3" href="">
+                        <img class="img-fluid rounded" src="img/ApiPelangi80.jpg" alt="">
+                        <div class="pl-3">
+                            <h6 class="">Api Pelangi</h6>
+                            <small>1 jam yang lalu</small>
+                        </div>
+                    </a>
+                    <a class="d-flex align-items-center text-decoration-none mb-3" href="">
+                        <img class="img-fluid rounded" src="img/hujan80.jpg" alt="">
+                        <div class="pl-3">
+                            <h6 class="">Hujan Sehat Tapi Mematikan</h6>
+                            <small>1 jam yang lalu</small>
+                        </div>
+                    </a>
+                </div>
+                <!-- Tag Cloud -->
+                <div class="col-lg-6">
+                    <h3 class="text-uppercase mb-4" style="letter-spacing: 5px;">Tag Topik</h3>
+                    <div class="d-flex flex-wrap m-n1">
+                        <a href="" class="btn btn-outline-primary m-1">#minyakkelapa</a>
+                        <a href="" class="btn btn-outline-primary m-1">#gurunsahara</a>
+                        <a href="" class="btn btn-outline-primary m-1">#berlian</a>
+                        <a href="" class="btn btn-outline-primary m-1">#garam</a>
+                        <a href="" class="btn btn-outline-primary m-1">#hujan</a>
+                        <a href="" class="btn btn-outline-primary m-1">#api</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Courses Start -->
+    <div class="container-fluid">
+        <div class="container py-5 d-flex flex-column justify-content-center align-items-center">
+            <div class="text-center mb-5 border-bottom d-block pb-2" style="width: 500px;"> 
+                <h1>Topik Trending</h1>
+            </div>
+            <div class="row d-flex justify-content-center align-items-center mb-5" style="gap: 30px;">
+                <div class="col-lg-4 mb-3 p-3 rounded" style="box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px; height: 430px;">
+                    <div class="rounded overflow-hidden mb-2">
+                        <img class="img-fluid rounded" src="img/sabunbatang.jpg" alt="">
+                        <div class="mt-3">
+                            <a class="h5" href="page-diskusi.html">Minyak Kelapa Menjadi Sabun Mandi</a>
+                            <div class="d-flex justify-content-left mt-4 cursor-pointer border-bottom pb-3" style="gap: 20px; ">
+                                <small class="m-0"><i class="fas fas fa-thumbs-up text-primary mr-2"></i>220 suka</small>
+                                <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>0 komentar</small>
+                                <small class="m-0"><i class="fa fa-eye text-primary mr-2"></i>300 orang</small>
+                            </div>
+                            <small class="mt-2 d-block"><i class="far fa-clock text-primary mr-2"></i>4 jam yang
+                                    lalu</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-3 p-3 rounded" style="box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px; height: 430px;">
+                    <div class="rounded overflow-hidden mb-2">
+                        <img class="img-fluid rounded" src="img/LautMati.jpeg" alt="">
+                        <div class="mt-3">
+                            <a class="h5" href="page-diskusi-lautMati.html">Jadi Juragan Garam Karena Laut Mati</a>
+                            <div class="d-flex justify-content-left mt-4 cursor-pointer border-bottom pb-3" style="gap: 20px; ">
+                                <small class="m-0"><i class="fas fas fa-thumbs-up text-primary mr-2"></i>180 suka</small>
+                                <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>2 komentar</small>
+                                <small class="m-0"><i class="fa fa-eye text-primary mr-2"></i>400 orang</small>
+                            </div>
+                            <small class="mt-2 d-block"><i class="far fa-clock text-primary mr-2"></i>3 jam yang
+                                    lalu</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mb-5 mt-3 border-bottom d-block pb-2" style="width: 300px;">
+                <h1>Topic Asik</h1>
+            </div>
+                <div class="row d-flex justify-content-center align-items-center mb-5" style="gap: 30px;">
+                    <div class="col-lg-4 mb-3 p-3 rounded" style="box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px; height: 430px;">
+                        <div class="rounded overflow-hidden mb-2">
+                            <img class="img-fluid rounded" src="img/GurunSahara.jpg" alt="">
+                            <div class="mt-3">
+                                <a class="h5" href="page-diskusi.html">Gurun Sahara Jadi Hutan</a>
+                                <div class="d-flex justify-content-left mt-4 cursor-pointer border-bottom pb-3" style="gap: 20px; ">
+                                    <small class="m-0"><i class="fas fas fa-thumbs-up text-primary mr-2"></i>150 suka</small>
+                                    <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>1 komentar</small>
+                                    <small class="m-0"><i class="fa fa-eye text-primary mr-2"></i>120 orang</small>
+                                </div>
+                                <small class="mt-2 d-block"><i class="far fa-clock text-primary mr-2"></i>5 jam yang
+                                        lalu</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-3 p-3 rounded" style="box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px; height: 430px;">
+                        <div class="rounded overflow-hidden mb-2">
+                            <img class="img-fluid rounded" src="img/HujanMematikan.jpg" alt="">
+                            <div class="mt-3">
+                                <a class="h5" href="page-diskusi-hujan.html">Hujan Sehat Tapi Mematikan</a>
+                                <div class="d-flex justify-content-left mt-4 cursor-pointer border-bottom pb-3" style="gap: 20px; ">
+                                    <small class="m-0"><i class="fas fas fa-thumbs-up text-primary mr-2"></i>120 suka</small>
+                                    <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>2 komentar</small>
+                                    <small class="m-0"><i class="fa fa-eye text-primary mr-2"></i>110 orang</small>
+                                </div>
+                                <small class="mt-2 d-block"><i class="far fa-clock text-primary mr-2"></i>1 jam lalu yang
+                                        lalu</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-3 p-3 rounded" style="box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px; height: 430px;">
+                        <div class="rounded overflow-hidden mb-2">
+                            <img class="img-fluid rounded" src="img/Berlian.jpg" alt="">
+                            <div class="mt-3">
+                                <a class="h5" href="page-diskusi.html">Gergaji Pakai Berlian</a>
+                                <div class="d-flex justify-content-left mt-4 cursor-pointer border-bottom pb-3" style="gap: 20px; ">
+                                    <small class="m-0"><i class="fas fas fa-thumbs-up text-primary mr-2"></i>154 suka</small>
+                                    <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>3 komentar</small>
+                                    <small class="m-0"><i class="fa fa-eye text-primary mr-2"></i>132 orang</small>
+                                </div>
+                                <small class="mt-2 d-block"><i class="far fa-clock text-primary mr-2"></i>48 menit yang
+                                        lalu</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-3 p-3 rounded" style="box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px; height: 430px;">
+                        <div class="rounded overflow-hidden mb-2">
+                            <img class="img-fluid rounded" src="img/ApiPelangi.jpg" alt="">
+                            <div class="mt-3">
+                                <a class="h5" href="page-diskusi.html">Api Pelangi</a>
+                                <div class="d-flex justify-content-left mt-4 cursor-pointer border-bottom pb-3" style="gap: 20px; ">
+                                    <small class="m-0"><i class="fas fas fa-thumbs-up text-primary mr-2"></i>124 suka</small>
+                                    <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>1 komentar</small>
+                                    <small class="m-0"><i class="fa fa-eye text-primary mr-2"></i>80 orang</small>
+                                </div>
+                                <small class="mt-2 d-block"><i class="far fa-clock text-primary mr-2"></i>1 jam yang
+                                        lalu</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-3 p-3 rounded" style="box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px; height: 430px;">
+                        <div class="rounded overflow-hidden mb-2">
+                            <img class="img-fluid rounded" src="img/Galaksi.jpg" alt="">
+                            <div class="mt-3">
+                                <a class="h5" href="page-diskusi.html">Galaxi Ga Cuma Satu</a>
+                                <div class="d-flex justify-content-left mt-4 cursor-pointer border-bottom pb-3" style="gap: 20px; ">
+                                    <small class="m-0"><i class="fas fas fa-thumbs-up text-primary mr-2"></i>151 suka</small>
+                                    <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>1 komentar</small>
+                                    <small class="m-0"><i class="fa fa-eye text-primary mr-2"></i>129 orang</small>
+                                </div>
+                                <small class="mt-2 d-block"><i class="far fa-clock text-primary mr-2"></i>2 jam yang
+                                        lalu</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-3 p-3 rounded" style="box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px; height: 430px;">
+                        <div class="rounded overflow-hidden mb-2">
+                            <img class="img-fluid rounded" src="img/BiruDongker.png" alt="">
+                            <div class="mt-3">
+                                <a class="h5" href="page-diskusi-navy.html">Cari Pasangan yang Suka Warna Navy</a>
+                                <div class="d-flex justify-content-left mt-4 cursor-pointer border-bottom pb-3" style="gap: 20px; ">
+                                    <small class="m-0"><i class="fas fas fa-thumbs-up text-primary mr-2"></i>135 suka</small>
+                                    <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>1 komentar</small>
+                                    <small class="m-0"><i class="fa fa-eye text-primary mr-2"></i>128 orang</small>
+                                </div>
+                                <small class="mt-2 d-block"><i class="far fa-clock text-primary mr-2"></i>1 jam yang
+                                        lalu</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Courses End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-light border-top py-4 px-sm-3 px-md-5 d-flex justify-content-center align-items-center"
+        style="border-color: rgba(256, 256, 256, .1) !important; box-shadow: rgba(0, 0, 0, 0.08) 0px -4px 12px;">
+        <div class="col-lg-9 text-md-left mb-3 mb-md-0">
+            <p class="m-0 text-dark text-center "> Copyright Reserved 2022 &copy;<span class="text-primary">Trendingan.</span></p>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

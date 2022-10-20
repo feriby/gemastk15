@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Trendingan - Diskusi dan PMB</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- style zindex  -->
+    <style type="text/css"> .zindex {
+        z-index: 9999;
+    }
+    </style>
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <div class="container-fluid border-bottom position-fixed bg-light zindex"
+        style="box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;">
+        <div class="row px-xl-5">
+            <div class="col-lg-3 d-none d-lg-block">
+                <div class="h-100 d-flex justify-content-left align-items-center">
+                    <h5 class="text-primary m-0"><i class="fa fa-book-open mr-2"></i>Trendingan.</h5>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0">
+                    <a href="" class="text-decoration-none d-block d-lg-none">
+                        <h1 class="m-0"><span class="text-primary">T</span>rendingan.</h1>
+                    </a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav py-0 col-lg-12 d-flex" style="justify-content: right;">
+                            <a href="index.html" class="nav-item nav-link">Beranda</a>
+                            <a href="diskusi.html" class="nav-item nav-link active">Diskusi</a>
+                            <a href="teacher.html" class="nav-item nav-link">PPMB</a>
+                            <a href="about.html" class="nav-item nav-link">Tentang</a>
+                            <a href="contact.html" class="nav-item nav-link mr-5">Kontak</a>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="navbar-nav dropdown pl-5" >
+                                    <img src="img/userAbu.jpg" alt="" data-toggle="dropdown"
+                                        class="rounded-circle cursor-pointer">
+                                    <div class="dropdown-menu ">
+                                        <a href="" class="dropdown-item">Pengaturan</a>
+                                        <a href="" class="dropdown-item">Keluar</a>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Detail Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="mb-2">
+                        <h6 class="text-primary mb-3">08.32 | 15 Oktober 2022</h6>
+                        <h1 class="mb-5">Hujan Sehat tapi Mematikan</h1>
+                        <img class="img-fluid rounded w-100 mb-4" src="img/HujanMematikanCarousel.jpg" alt="Image">
+                        <p>Hujan memang bukan favorit semua orang, bahkan Sebagian orang menganggap hujan dapat menghambat aktivitas sehari-hari, 
+                            menimbulkan berbagai penyakit, hingga menyebabkan demam, masuk angin, dan sakit kepala. Tidak hanya itu, 
+                            banyak orang yang mengira bahwa hujan adalah air kotor karena berasal dari uapan air laut dan bisa saja terkontaminasi oleh sampah dan limbah. 
+                            Namun, ternyata tetesan air yang turun dari langit dalam jumlah yang banyak ini adalah air murni yang bahkan bisa lebih bersih dibandingkan dengan air dalam tanah.
+                            Dilansir dari The International Water Association, air hujan membawa senyawa polutan yang menguap dari laut 
+                            dan terbawa oleh rintikan hujan saat turun ke bumi. Namun senyawa tersebut akan hilang dengan sendirinya apabila 
+                            kita menunggu 20 menit pertama hujan turun. Tidak hanya itu, selain penghilang stres, air hujan juga baik untuk kesehatan paru-paru.</p>
+                    </div>
+                    <div class="d-flex justify-content-left mt-4 cursor-pointer border-bottom pb-3 mb-4" style="gap: 20px; ">
+                        <small class="d-flex justify-content-center align-items-center "><i class="fas fas fa-thumbs-up fa-2x mr-2" id="like" style="color: #FF6600;" onclick="changeColorLike()"></i>120 suka</small>
+                        <small class="d-flex justify-content-center align-items-center"><i class="fa fa-user fa-2x text-primary mr-2"></i>2 komentar</small>
+                        <small class="d-flex justify-content-center align-items-center"><i class="fa fa-eye fa-2x text-primary mr-2"></i>110 orang</small>
+                    </div>
+
+                    <!-- Comment List -->
+                    <div class="mb-5">
+                        <div class="w-100 mb-5">
+                            <div class="input-group border rounded" style="box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;">
+                                <input type="text" class="form-control border-secondary bg-secondary" style="padding: 30px;" placeholder="Komentar">
+                                <div class="input-group-append">
+                                    <button class="btn btn-primary px-3">Kirim</button>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="text-uppercase mb-4" style="letter-spacing: 5px;">2 Komentar</h3>
+                        <div class="media mb-4">
+                            <img src="img/ekaSU.jpg" alt="Image" class="img-fluid rounded-circle mr-3 mt-1"
+                                style="width: 45px;">
+                            <div class="media-body">
+                                <h6>EkaSU2<small><i> 09.03 | 15 Oktober 2022</i></small></h6>
+                                <p>Hujan memang berkah sendiri dari tuhan yang maha esa sehingga kita patut bersukur telah diberi air melimpah melalui hujan, tetapi kita juga jangan lupa untuk menjaganya karena memang dari itu bersih tapi setelah sampai ke bumi air itu menjadi tercemar oleh larutan" yang berbahaya</p>
+                                <div class="d-flex justify-content-right align-items-center">
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <span class="fa fa-2x fa-hand-point-up mb-1" data-toggle="tooltip" data-placement="top" title="Trendingkan" style="cursor: pointer; color: #ffc107;" id="trendingkan" onclick="changeColorTrendingkan()"></span>
+                                        <small class="font-weight-light text-dark pl-2 pr-2">5</small>
+                                    </div>
+                                    <button class="btn btn-sm btn-secondary">Balas</button>  
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="media mb-4">
+                            <img src="img/rohim.jpg" alt="Image" class="img-fluid rounded-circle mr-3 mt-1"
+                                style="width: 45px;">
+                            <div class="media-body">
+                                <h6>RohimCs<small><i> 10.24 | 15 Oktober 2022</i></small></h6>
+                                <p>hujan adalah suatu kondisi dimana suhu akan sedikit lebih dingin daripada biasanya, terkadang kita terutama badan kita itu tidak siap dengan keadaan mendadak seperti itu, nah makanya hujan itu berkah dan terkadang juga dapat membuat sakit badan serta dapat mematikan juga</p>
+                                <div class="d-flex justify-content-right align-items-center">
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <span class="fa fa-2x fa-hand-point-up mb-1" data-toggle="tooltip" data-placement="top" title="Trendingkan" style="cursor: pointer; color: #ffc107;" id="trendingkan" onclick="changeColorTrendingkan()"></span>
+                                        <small class="font-weight-light text-dark pl-2 pr-2">3</small>
+                                    </div>
+                                    <button class="btn btn-sm btn-secondary">Balas</button>  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Komen Trend -->
+                <div class="col-lg-4 border-left pr-0">
+                    <h5 class="text-primary text-uppercase mb-4 text-center">Komentar Trending</h5>
+                    <div class="container-fluid p-0 d-flex flex-column align-items-center mb-3 ">
+                        <div class="container-fluid d-flex justify-content-left align-items-center mb-2">
+                            <h6><img src="img/ekaSU.jpg" alt="Image" class="img-fluid rounded-circle mr-3" style="width:30px;">EkaSU2</h6>
+                        </div>
+                        <div class="rounded pt-2 pl-2 pr-2 d-flex justify-content-center align-items-center" style="gap: 5px; box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;">
+                            <p class="h6 font-weight-light">Hujan memang berkah sendiri dari tuhan yang maha esa sehingga kita patut bersukur telah diberi air melimpah melalui hujan, tetapi kita juga jangan lupa untuk menjaganya karena memang dari itu bersih tapi setelah sampai ke bumi air itu menjadi tercemar oleh larutan" yang berbahaya</p>
+                            <div class="d-flex flex-column justify-content-center align-items-center">
+                                <span class="fa fa-2x fa-hand-point-up mb-1" data-toggle="tooltip" data-placement="top" title="Trendingkan" style="cursor: pointer; color: #ffc107;" id="trendingkan" onclick="changeColorTrendingkan()"></span>
+                                <small class="font-weight-light">5</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-light border-top py-4 px-sm-3 px-md-5 d-flex justify-content-center align-items-center"
+        style="border-color: rgba(256, 256, 256, .1) !important; box-shadow: rgba(0, 0, 0, 0.08) 0px -4px 12px;">
+        <div class="col-lg-9 text-md-left mb-3 mb-md-0">
+            <p class="m-0 text-dark text-center "> Copyright Reserved 2022 &copy;<span class="text-primary">Trendingan.</span></p>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <!-- ini script penanda atas (coba) -->
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+    </script>
+
+    <!-- ini  script contoh -->
+    <script type="text/javascript">
+        let trendingkan = document.getElementById('trendingkan');
+        let like = document.getElementById('like');
+
+        function changeColorLike() {
+            like.style.color = "dimgray";
+        }
+
+        function changeColorTrendingkan() {
+            trendingkan.style.color = "dimgray";
+        }
+    </script>script
+</body>
+
+</html>
